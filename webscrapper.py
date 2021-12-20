@@ -12,11 +12,11 @@ start_url = input("Type the URL you want to scrap: ")
 #Download the HTML from the start_url
 downloaded_html = requests.get(start_url)
 
-Savingto = input("Where you want to save: ")
+Savingas = input("How do you want to name it: ")
 
 #Parse the HTML with BeatifulSoup and create a soup object
 soup = BeautifulSoup(downloaded_html.text)
 
 # Save a local copy
-with open(Savingto, 'w') as file:
+with open(Savingas, 'w') as file:
     file.write(soup.prettify())
