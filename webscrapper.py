@@ -18,5 +18,5 @@ Savingas = input("How do you want to name it: ")
 soup = BeautifulSoup(downloaded_html.text)
 
 # Save a local copy
-with open(Savingas, 'w') as file:
+with open(Savingto, 'w', encoding ="utf-8") as file:
     file.write(soup.prettify())
